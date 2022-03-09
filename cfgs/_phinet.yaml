@@ -1,0 +1,27 @@
+model_name: phinet
+recurrent: False
+framed: False
+
+data:
+  waveform: False
+  debug: False
+  batch_size: 64
+
+network_config:
+  res: 96
+  in_channels: 1
+  B0: 3
+  alpha: 0.5
+  beta: 1.0
+  t_zero: 4
+  h_swish: True
+  squeeze_excite: True
+  downsampling_layers: [4]
+  include_top: False
+  num_classes: 10
+  residuals: True
+  first_conv_filters: 48
+  b1_filters: 48
+  b2_filters: 48
+  pool: True
+  conv2d_input: True

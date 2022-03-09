@@ -1,0 +1,10 @@
+soundfile
+numpy
+pandas
+# torchaudio
+# torchtext==0.8.1
+torchinfo
+wandb
+torch==1.9.0a0+c3d40fd
+torchtext==0.10.0a0
+einops
