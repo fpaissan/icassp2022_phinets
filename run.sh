@@ -1,4 +1,6 @@
-python prepare_MAVD.py
-python kd-sed/augment/augment.py --dataset MAVD
+# Data augmentation and feature extraction
+python augment/augment.py -d UrbanSound8K -p $1
+python augment/extract_features.py -d UrbanSound8K -p $1 -a True
 
-python extract_features.py --dataset MAVD --augment
+# Model training
+python main.py -a UrbanSound8K cfgs $1
